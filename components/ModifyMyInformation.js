@@ -3,10 +3,11 @@ import React from 'react';
 export function ModifyMyInformation() {
 
     return (
-        <div className='center'>
+        <div >
             <form>
                 <h1>내 정보 관리</h1>
-                <h6 className='right'>SNS 연결계정</h6>
+                
+                <h6 >SNS 연결계정</h6>
                 <h3>성명</h3>
                 <input type="text" name="name" defaultValue="노홍주"/>
                 <h3>휴대폰 번호</h3>
