@@ -49,47 +49,25 @@ export function ModifySelectionList() {
         <div className='center'>
             <form>
                 <h1>내 서재 관리</h1>
-                <BottomNavigation
-                    showLabels="showLabels"
-                    value={value}
-                    onChange={(event, newValue) => {
-                        setValue(newValue);
-                    }}>
-                    <BottomNavigationAction label="읽은 책 목록" icon={<MenuBookIcon/>}/>
-                    <BottomNavigationAction label="찜한 책 목록" icon={<FavoriteIcon/>}/>
-                </BottomNavigation>
-                <Box  sx={{ width: 'auth', display: 'flex', my: 5 }}>
-                <ImageList sx={{ width: 'auth', height: 'auth' }}>
-                  <ImageListItem  cols={4}>
-                  </ImageListItem>
-                  {itemData.map((item) => (
-                    <ImageListItem key={item.img}>
-                      <img
-                        src={`${item.src}?w=248&fit=crop&auto=format`}
-                        srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
-                        alt={item.title}
-                        loading="lazy"
-                      />
-                      <ImageListItemBar
-                        title={item.title}
-                        subtitle={item.author}
-                        actionIcon={
-                          <IconButton aria-label={`info about ${item.title}`}>
-                            <InfoIcon />
-                            <DeleteOutlineIcon/> 
-                            </IconButton>                     
-                        }
-                      />
-                    </ImageListItem>
-                  ))}
-                </ImageList>
-                </Box>
-                <label className='right' htmlFor="icon-button-file">
-                    <input accept="image/*" id="icon-button-file" type="file"/>
-                    <IconButton color="primary" aria-label="upload picture" component="span">
-                        <PhotoCamera/>
-                    </IconButton>
-                </label>
+                <div className='center'>
+                <form >
+                    <div>
+                        <img
+                            src='http://image.kyobobook.co.kr/images/book/large/754/l9791191043754.jpg'></img>
+                        <img
+                            src='http://image.kyobobook.co.kr/images/book/large/620/l9791162245620.jpg'></img>
+                        <img
+                            src='http://image.kyobobook.co.kr/images/book/large/067/l9791157688067.jpg'></img>
+                        <img
+                            src='http://image.kyobobook.co.kr/images/book/large/010/l9788963724010.jpg'></img>
+    
+                    </div>
+                    <label className='right' htmlFor="icon-button-file">
+                        <input accept="image/*" id="icon-button-file" type="file"/>
+                    </label>
+                </form>
+            </div>
+        );
             </form>
         </div>
     );
