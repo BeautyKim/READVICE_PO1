@@ -9,8 +9,8 @@ export default function Product(){
                 <Image id="bookSearch" src={bookSearch} width={200} height={300} alt="검색소개"/>
             </section>
             <style jsx>{`
-                div {
-                    margin-top: 10%;
+                section {
+                    margin: 10% 15%;
                     background-image:url(/blob.svg);
                     background-size: 500px;
                     background-repeat: no-repeat;

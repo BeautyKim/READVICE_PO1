@@ -2,10 +2,11 @@ import { BsSearch, BsFillCameraFill } from "react-icons/bs";
 
 
 export default function SearchBar(){
+
     return(
         <div className="allsearchBar">
-        <form>
-            <input type="search" className="searchBar" placeholder="책 제목 또는 저자명을 입력해주세요."/>    
+        <form action="/bookSearch/search">
+            <input type="search" className="searchBar" placeholder="책 제목 또는 저자명을 입력해주세요."/>
             <button type="submit" className="searchQuerySubmit"><BsSearch size={20}/></button>
             <label className="searchQueryCamera" For="chooseFile" ><BsFillCameraFill size={20}/></label>
             <input type="file" className="file" id="chooseFile" />
