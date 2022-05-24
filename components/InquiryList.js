@@ -2,9 +2,8 @@
 export function InquiryList(){
   
     return(
-      <>
+      <div className="all">
       <form>
-      <div>
           <button>1:1 문의하기</button>
           <button>문의 내역</button><br/>
           <h4>1:1 문의 내역</h4>
@@ -12,7 +11,7 @@ export function InquiryList(){
           (Off-time 12:00 ~ 14:00, 토/일/공휴일 휴무)
           한번 등록한 상담내용은 수정이 불가능합니다.
           향후 멤버쉽 단계별 혜택 및 선정기준은 사전공지 후 변경될 수 있습니다.</h5>
-            <table border = "1">
+            <table className="table" border = "1">
                 <tr>
                 <th><h4>상담구분</h4></th>
                 <th><h4>상담제목</h4></th>
@@ -28,8 +27,17 @@ export function InquiryList(){
                 <th><button>삭제</button></th>
                 </tr>
             </table>
-      </div>
-  </form>
-      </>
+            </form>
+            <style jsx>{`
+            .all{
+              margin:auto;
+              text-align:center;
+            }
+            .table{
+                margin:auto;
+              text-align:center;
+            }
+          `}</style>
+            </div>
     )
 }

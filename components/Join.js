@@ -3,9 +3,8 @@ import { Checkbox } from 'antd';
 export function Join(){
   
     return(
-      <>
+      <div className='all'>
       <form>
-      <div>
       <label for="uname"><b>이메일</b></label><br/>
       <input type="text" placeholder="Email입력" name="userid" required/>@
       <select name='emailAddress'>
@@ -26,9 +25,13 @@ export function Join(){
       관심사에 따라 이메일 알림(예: 내 시청 목록에 있는 영화/프로그램의 스트리밍이 가능해짐)을 받고 싶습니다.<br/>
       이메일에 있는 링크를 클릭하면 언제든지 수신 거부할 수 있습니다.</Checkbox><br/>
       <button>취소</button><button>확인</button>
-      </div>
       </form><br/><br/>
-
-      </>
+      <style jsx>{`
+            .all{
+              margin:auto;
+              text-align:center;
+            }
+          `}</style>
+      </div>
     )
 }
