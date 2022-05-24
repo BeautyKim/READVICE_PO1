@@ -1,10 +1,13 @@
-import { Layout } from '../components/Layout'
-import { Search } from '../components/Search'
-import {SearchDetail} from '../components/SearchDetail'
-import styles from '../styles/Home.module.css'
+import { SearchDetail } from '../components/SearchDetail'
+import {Search} from '../components/Search'
+import { RecommendModal } from '../components'
 
-export default function Home() {
+export default function HomePage() {
   return (
+    <>
     <Search/>
-  )
+    <SearchDetail/>
+    <RecommendModal/>
+    </>
+    )
 }
