@@ -1,12 +1,10 @@
-import React from 'react';
-
 export function ModifyMyInformation() {
 
     return (
-        <div >
-            <form>
+        <form>
+            <div >
                 <h1>내 정보 관리</h1>
-                
+
                 <h6 >SNS 연결계정</h6>
                 <h3>성명</h3>
                 <input type="text" name="name" defaultValue="노홍주"/>
@@ -23,7 +21,7 @@ export function ModifyMyInformation() {
                 <button variant="contained" disableElevation="disableElevation">수정하기</button>
                 <br/>
                 <button size="small">회원탈퇴</button>
-            </form>
-        </div>
+            </div>
+        </form>
     );
 }
