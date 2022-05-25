@@ -1,3 +1,4 @@
+import Header from "../Header"
 import Link from "next/link";
 import { FcGoogle } from "react-icons/fc"
 
@@ -5,6 +6,7 @@ export default function Signup(){
   
     return(
       <div className="all">
+      <Header title="구글회원가입" />
       <form>
       <button type="submit"><FcGoogle size={15}/> Google 계정으로 가입</button><br/>
       또는<br/>

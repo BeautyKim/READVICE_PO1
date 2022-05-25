@@ -1,3 +1,5 @@
+
+import Chatbot from "../components/Chatbot";
 import Header from "../components/Header";
 import Product from "../components/Product";
 import SearchBar from "../components/SearchBar";
@@ -7,6 +9,7 @@ export default function Home() {
     <div>
       <Header title="Home"/>
       <SearchBar />
+      <Chatbot />
       <Product />
     </div>
     )

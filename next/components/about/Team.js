@@ -5,7 +5,7 @@ export default function Team() {
 
     const style = css`
     .imgAll {
-        float: right;
+        float: center;
         display: flex;
     }
     `

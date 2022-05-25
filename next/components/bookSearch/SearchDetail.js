@@ -1,6 +1,9 @@
+import Header from "../Header"
+
 export default function SearchDetail(){
     return(
         <>
+        <Header title="검색상세" />
         <div className= "center">
         <input type="text"/> <button>텍스트 검색</button> <button>사진 검색</button>
         </div>
@@ -85,7 +88,7 @@ export default function SearchDetail(){
               border: 1px solid gray;
               padding: 50px;
               margin: 20px;
-            
+              background: #ffff;
               }
         `}</style>
         </> 

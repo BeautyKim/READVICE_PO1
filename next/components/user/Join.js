@@ -1,7 +1,10 @@
+import Header from "../Header"
+
 export default function Join() {
 
     return (
         <div className='all'>
+            <Header title="회원가입" />
             <form>
                 <label For="uname">
                     <b>이메일</b>
@@ -44,10 +47,11 @@ export default function Join() {
                 <button>취소</button>
                 <button>확인</button>
             </form><br/><br/>
-            <style jsx="jsx">
-                {` .all {
+            <style jsx>{`
+                    .all {
                         margin: auto;
                         text-align: center;
+                        padding-top: 100px;
                     }
                      `}</style>
         </div>

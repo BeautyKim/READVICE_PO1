@@ -1,8 +1,10 @@
+import Header from "../Header"
 
 export default function InquiryList(){
   
     return(
       <div className="all">
+      <Header title="문의내역"/>
       <form>
           <h4>1:1 문의 내역</h4>
           <h5>상담시간평일(월 ~ 금) 10:00 ~ 17:00

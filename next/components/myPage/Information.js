@@ -4,8 +4,8 @@ export default function Information() {
 
     return (
         <form>
-        <Header title="문의하기" />
-            <div >
+        <Header title="내정보" />
+            <div className="information">
                 <h1>내 정보 관리</h1>
                 <h6 >SNS 연결계정</h6>
                 <h3>성명</h3>
@@ -24,6 +24,12 @@ export default function Information() {
                 <br/>
                 <button size="small">회원탈퇴</button>
             </div>
+            <style jsx>{`
+                .information{
+                    padding-top: 50px;
+                    text-align: center;
+                }
+            `}</style>
         </form>
     );
 }

@@ -1,6 +1,9 @@
+import Header from "../Header"
+
 export default function SelectionList() {
     return (
       <div>
+        <Header title="찜한 책" />
         <form>
             <h1>내 서재 관리</h1>
             <button>읽은 책 목록</button>

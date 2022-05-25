@@ -4,16 +4,7 @@ import Link from "next/link";
 import css from "styled-jsx/css";
 
 const style = css`
-    header {
-        padding-left: 3%;
-        padding-right: 5%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        position: sticky;
-        padding-top: 10px;
-        
-        }
+
     ul {
         list-style-type: none;
         padding: 0;

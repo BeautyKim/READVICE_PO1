@@ -1,9 +1,11 @@
+import Header from "../Header"
 import Link from "next/link";
 
 export default function ReadingBooks() {
 
     return (
         <div>
+        <Header title="읽은 책" />
             <form >
                 <h1>내 서재 관리</h1>
                 <button>읽은 책 목록</button>

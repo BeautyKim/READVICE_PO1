@@ -1,10 +1,11 @@
-
+import Header from "../Header"
 import Link from "next/link"
 
 export default function Inquiry(){
   
     return(
       <div className="all">
+      <Header title="문의하기"/>
       <form>
           <h1>1:1 문의하기</h1>
           <select name='ToInquiry' id="ToInquiry" >
