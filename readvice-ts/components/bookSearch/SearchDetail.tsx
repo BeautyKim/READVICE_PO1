@@ -1,5 +1,5 @@
 import Header from "../Header"
-import SearchBar from "../SearchBar"
+import SearchBar from "@/components/SearchBar"
 
 export default function SearchDetail(){
     return(
@@ -9,7 +9,7 @@ export default function SearchDetail(){
         <SearchBar />
         </div>
         <p className= "box">
-        <div float="left">
+        <div>
         <img className="img" src="http://image.kyobobook.co.kr/images/book/large/225/l9791191114225.jpg"/>
         작별인사 소설
         김영하 복복서가 12,600원 | eBook 10,000원
