@@ -1,12 +1,11 @@
-import Header from "../Header"
-import SearchBar from "@/components/SearchBar"
+import {Header} from "@/components"
+import KakaoMap from "@/components/map/kakaoMap"
 
 export default function SearchDetail(){
     return(
         <>
         <Header title="검색상세" />
         <div className= "center">
-        <SearchBar />
         </div>
         <p className= "box">
         <div>
@@ -14,7 +13,7 @@ export default function SearchDetail(){
         작별인사 소설
         김영하 복복서가 12,600원 | eBook 10,000원
         <button>바로 구매하기</button>
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMMhN1PFLJJXvnXemx_NSWl83TM_OcORAKbw&usqp=CAU"></img>
+        <KakaoMap />
         </div>
         </p>
         <button>책 정보</button> <button>지도 자세히 보기</button>

@@ -1,4 +1,4 @@
-import SearchDetail from "@/components/bookSearch/SearchDetail"
+import SearchDetail from "@/components/bookSearch/SearchDetail";
 
 export default function SearchDetailPage(){
     return(

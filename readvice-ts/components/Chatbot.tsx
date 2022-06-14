@@ -1,5 +1,5 @@
 import Image from "next/image";
-import bb8 from "../public/bb8.svg"
+import bb8 from "../public/images/bb8.svg"
 
 export default function Chatbot(){
     return(

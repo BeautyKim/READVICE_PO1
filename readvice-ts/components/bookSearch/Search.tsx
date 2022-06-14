@@ -1,13 +1,11 @@
-import Header from "../Header"
+import {Header} from "@/components"
 import Link from "next/link";
-import SearchBar from "../SearchBar";
 
 export default function Search(){
     return(
         <div>
         <Header title="검색"/>
         <div className="center">
-        <SearchBar />
         </div>
         <p><Link href="/bookSearch/searchDetail"><img src="http://image.kyobobook.co.kr/images/book/large/225/l9791191114225.jpg"/></Link>
         작별인사 김영하 복복서가 12,600원 | eBook 10,000원

@@ -1,5 +1,5 @@
 
-export default function SearchRecheck(){
+export function SearchRecheck(){
     return(
         <form>
         <div>

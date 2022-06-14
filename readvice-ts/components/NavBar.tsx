@@ -4,7 +4,6 @@ import Link from "next/link";
 import css from "styled-jsx/css";
 
 const style = css`
-
     ul {
         list-style-type: none;
         padding: 0;
@@ -57,11 +56,11 @@ const style = css`
         }
     `;
 
-export default function NavBar(){
+export function NavBar(){
     return(
         <div>
             <header>
-                <Link href="/"><Image src="/readviceLogo.svg" alt="readviceLogo" width={100} height={100}/></Link>
+                <Link href="/"><Image src="/images/readviceLogo.svg" alt="readviceLogo" width={100} height={100}/></Link>
                 <nav>
                     <ul>
                         <li className="dropdown"> <Link href="#" className="dropbtn"><BsPersonCircle /></Link>

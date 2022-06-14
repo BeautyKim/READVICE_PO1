@@ -1,4 +1,4 @@
-import Header from "../Header"
+import {Header} from "@/components";
 import Link from "next/link"
 import { FcGoogle } from "react-icons/fc"
 

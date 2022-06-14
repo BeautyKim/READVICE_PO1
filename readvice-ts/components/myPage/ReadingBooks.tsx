@@ -1,4 +1,4 @@
-import Header from "../Header"
+import {Header} from "@/components";
 import Link from "next/link";
 
 export default function ReadingBooks() {

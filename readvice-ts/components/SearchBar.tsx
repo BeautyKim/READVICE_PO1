@@ -2,7 +2,7 @@
 import { BsSearch, BsFillCameraFill } from "react-icons/bs";
 
 
-export default function SearchBar(){
+export function SearchBar(){
 
     return(
         <div className="allsearchBar">
