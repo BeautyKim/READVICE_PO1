@@ -1,10 +1,10 @@
-import { Header, Product } from "@/components";
+import { HeadTitle, Product } from "@/components";
 
 export default function Home() {
   return (
-    <div>
-      <Header title="Home"/>
+    <>
+      <HeadTitle title="Home"/>
       <Product />
-    </div>
+    </>
     )
 }

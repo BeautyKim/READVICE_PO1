@@ -1,11 +1,11 @@
-import { Header } from "@/components";
+import { HeadTitle } from "@/components";
 
 export default function Custom404() {
     return(
     <div id="main">
     	<div className="fof">
-            <Header title="404"/>
-            <h1>잘못된 페이지~~ 여기 왜 왔냐</h1>
+            <HeadTitle title="404"/>
+            <h1>잘못된 경로입니다</h1>
     	</div>
         <style jsx>{`
             div{

@@ -30,7 +30,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx"
-, "components/about/InquiryList.tsx", "components/user/Signup.tsx"  ],
+, "components/common/InquiryList.tsx", "components/users/Signup.tsx"  ],
   "exclude": [
     "node_modules",
     "**/*.spec.ts"
