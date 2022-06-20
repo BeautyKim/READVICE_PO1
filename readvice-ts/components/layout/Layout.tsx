@@ -1,6 +1,6 @@
 
 import React, { ReactNode } from 'react';
-import { Footer, Header, SearchBar } from '@/components';
+import { Chatbot, Footer, Header, SearchBar } from '@/components';
 
 
 interface LayoutProps {
@@ -15,6 +15,7 @@ export default function Layout({ children } : LayoutProps) {
       <main>
         {children}
       </main>
+      <Chatbot />
       <Footer />
     </>
   )

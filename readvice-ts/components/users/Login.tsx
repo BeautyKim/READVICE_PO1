@@ -1,7 +1,9 @@
+import Link from "next/link";
+
 export function Login() {
     return (
         <>
-            <form className="">
+            <form>
                 <div className="form-floating mb-3">
                     <input
                         type="email"
@@ -18,7 +20,7 @@ export function Login() {
                         placeholder="Password"/>
                     <label htmlFor="floatingPassword">Password</label>
                 </div>
-                <button className="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit">로그인</button>
+                <Link href="/common/loginHome"><button className="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit">로그인</button></Link>
                 <small className="text-muted">By clicking Sign up, you agree to the terms of use.</small>
                 <hr className="my-4"/>
                 <h2 className="fs-5 fw-bold mb-3">Or use a third-party</h2>

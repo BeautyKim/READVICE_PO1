@@ -1,15 +1,15 @@
 import Image from "next/image";
-import bb8 from "@/public/images/bb8.svg"
+import chatbot from "@/public/images/chatbot.svg"
 
 export function Chatbot(){
     return(
         <div>
-            <Image className="bot" src={bb8} width={100} height={100} alt="챗봇" />
+            <Image className="bot" src={chatbot} width={100} height={100} alt="챗봇" />
             <style jsx>{`
                 div {
-                    padding-top: 750px;
-                    float: right;
-                    position: sticky;
+                    position: fixed;
+                    bottom: 0;
+                    right: 0;
                 }
             `}</style>
         </div>

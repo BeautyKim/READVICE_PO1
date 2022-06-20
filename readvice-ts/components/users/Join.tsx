@@ -1,25 +1,25 @@
-import { userActions } from "@/modules/users"
 import { UserType } from "@/types/users/join"
-import { useState } from "react"
+import React, { useState } from "react"
 import { useDispatch } from "react-redux"
+import { User, userActions } from '@/modules/users'
 
-const Signup: React.FC = () => {
-    const [user, setUser] =useState<UserType>({
-        userId:'', password:'', userName:'', email:'', birth:0, gender:''
+const Join: React.FC = () => {
+    const [user, setUser] =useState<User>({
+        email:'', password:'', userName:'', birth:0, gender:''
     })
     const dispatch = useDispatch()
-    const handleChange = (e: any) =>{
+    const handleChange = (e: { preventDefault: () => void; target: { name: any; value: any } }) =>{
         e.preventDefault()
         const{name, value} = e.target;
-        setUser({...user,[name]: value})
+        setUser({...user, [name]: value})
     }
   return (
     <>
         <form onSubmit={
-            (e:any) => {
+            e=> {
                 e.preventDefault()
                 dispatch(userActions.joinRequest(user))
-                setUser({ userId:'', password:'', userName:'', email:'', birth:0, gender:'' })
+                setUser({ email:'', password:'', userName:'', birth:0, gender:'' })
             }
         }>
             <div className="form-floating mb-3">
@@ -46,10 +46,10 @@ const Signup: React.FC = () => {
                 <input
                     type="password"
                     className="form-control rounded-3"
-                    id="password"
+                    id="RePassword"
                     name="password"
                     placeholder="Password"/>
-                <label htmlFor="password">비밀번호 재확인</label>
+                <label htmlFor="RePassword">비밀번호 재확인</label>
             </div>
             <div className="form-floating mb-3">
                 <input
@@ -72,12 +72,12 @@ const Signup: React.FC = () => {
                 <label htmlFor="birth">생년월일</label>
             </div>
             <div className="form-check form-check-inline">
-                <input className="form-check-input" type="radio" name="male" id="gender" value="option1" onChange={handleChange}/>
-                <label className="form-check-label" htmlFor="gender">남성</label>
+                <input className="form-check-input" type="radio" name="gender" id="male" value="option1" onChange={handleChange}/>
+                <label className="form-check-label" htmlFor="male">남성</label>
             </div>
             <div className="form-check form-check-inline">
-                <input className="form-check-input" type="radio" name="female" id="gender" value="option2" onChange={handleChange}/>
-                <label className="form-check-label" htmlFor="gender">여성</label>
+                <input className="form-check-input" type="radio" name="gender" id="female" value="option2" onChange={handleChange}/>
+                <label className="form-check-label" htmlFor="female">여성</label>
             </div>
             <hr className="mb-4" />
           <div className="custom-control custom-checkbox">
@@ -103,4 +103,4 @@ const Signup: React.FC = () => {
     </>
   );
 }
-export default Signup
+export default Join

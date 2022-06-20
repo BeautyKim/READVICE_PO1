@@ -1,11 +1,10 @@
-import { BsPersonCircle } from "react-icons/bs"
 import Image from "next/image";
 import Link from "next/link";
 import css from "styled-jsx/css";
-import { Login } from "../users/Login";
-import Signup from "../users/Signup";
+import { Login } from "@/components";
 import { Provider } from "react-redux";
 import store from "@/modules/store";
+import Join from "@/components/users/Join";
 
 const style = css`
     header {
@@ -58,7 +57,6 @@ const style = css`
     .dropdown-content a:hover{
         background-color : #ececec
     }
-        
     .dropdown:hover .dropdown-content {
         display: block;
     }
@@ -111,7 +109,7 @@ export function Header(){
                         </div>
                         <div className="modal-body">
                             <Provider store={store}>
-                                <Signup />
+                            <Join />
                             </Provider>
                         </div>
                     </div>

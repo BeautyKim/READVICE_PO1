@@ -29,7 +29,7 @@ const styled = css`
         background-position: 80% center;
         text-align: 40%;
     }
-    .product1 p, .product3 p{
+    .product1, .product3{
         text-align: right;
     }
     .product5 {
@@ -66,24 +66,24 @@ export function Product(){
         <div className="contents">
             <section className="wrapper">
                 <article className="product0">
-                    <p><h1>Your read advice</h1>
-                        나만을 위한 사서 리드바이스</p>
+                    <h1>Your read advice</h1>
+                    <p>나만을 위한 사서 리드바이스</p>
                 </article>
                 <article className="product1">
-                    <p><h1>읽고 싶은 책을 검색하면</h1>
-                    지금 당장 내 주변에서 대출 할 수 있는 도서관과<br/>구매 가능한 온.오프라인 서점을 볼 수 있어요</p>
+                    <h1>읽고 싶은 책을 검색하면</h1>
+                    <p>지금 당장 내 주변에서 대출 할 수 있는 도서관과<br/>구매 가능한 온.오프라인 서점을 볼 수 있어요</p>
                 </article>
                 <article className="product2">
                     <h1>나의 서재를 찍어서<br/>내 취향에 맞는 도서를 추천 받자</h1>
                     <p>직접 입력할 필요없이 사진 한 장이면 취향에 맞는 도서를 추천 해줘요</p>
                 </article>
                 <article className="product3">
-                    <p><h1>메모만 했는데 독서기록장이 뚝딱</h1>
-                    짧은 메모만으로도 멋있는 독서기록장이 자동으로 만들어져요<br/>이 독서기록장을 PDF 형식으로 책으로 만들어줘요</p>
+                    <h1>메모만 했는데 독서기록장이 뚝딱</h1>
+                    <p>짧은 메모만으로도 멋있는 독서기록장이 자동으로 만들어져요<br/>이 독서기록장을 PDF 형식으로 책으로 만들어줘요</p>
                 </article>
                 <article className="product4">
-                    <p><h1>챗봇 최고야</h1>
-                        챗봇에 관한 설명~~~~~~</p>
+                    <h1>챗봇 최고야</h1>
+                    <p>챗봇에 관한 설명~~~~~~</p>
                 </article>
                 <article className="product5">
                     <h1>지금 바로 Readvice 이용하기</h1>
